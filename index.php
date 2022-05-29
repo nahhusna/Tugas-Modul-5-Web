@@ -9,7 +9,7 @@
 <body>
     <h2>CRUD DATA MAHASISWA</h2>
     <br/>
-    <a href="tambah.php">+ TAMBAH MAHASISWA</a>
+    <a href="tambahmhs.php">+ TAMBAH MAHASISWA</a>
     <br/>
     <br/>
     <table border="1">
@@ -33,8 +33,8 @@
                 <td><?php echo $mhs['nrp'];?></td>
                 <td><?php echo $mhs['alamatmhs'];?></td>
                 <td>
-                    <a href="edit.php?id=<?php echo $mhs['id']; ?>">EDIT</a>
-                    <a href="hapus.php?id=<?php echo $mhs['id']; ?>">HAPUS</a>
+                    <a href="editmhs.php?id=<?php echo $mhs['id']; ?>">EDIT</a>
+                    <a href="hapusmhs.php?id=<?php echo $mhs['id']; ?>">HAPUS</a>
                 </td>
             </tr>
             <?php
@@ -44,7 +44,7 @@
 
     <h2>CRUD DATA DOSEN</h2>
     <br/>
-    <a href="tambah.php">+ TAMBAH DOSEN</a>
+    <a href="tambahdsn.php">+ TAMBAH DOSEN</a>
     <br/>
     <br/>
     <table border="1">
@@ -76,10 +76,9 @@
                 <td><?php echo $dsn['agama'];?></td>
                 <td><?php echo $dsn['pend_akhir'];?></td>
                 <td>
-                    <a href="edit.php?id=<?php echo $dsn['id']; ?>">EDIT</a>
-                    <a href="hapus.php?id=<?php echo $dsn['id']; ?>">HAPUS</a>
+                    <a href="editdsn.php?id=<?php echo $dsn['id']; ?>">EDIT</a>
+                    <a href="hapusdsn.php?id=<?php echo $dsn['id']; ?>">HAPUS</a>
                 </td>
-            </tr>
             <?php
         }
         ?>
